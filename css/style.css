@@ -1,0 +1,242 @@
+body
+{
+    background-color: #0C0C0C;
+    color: white;
+    /*-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;*/
+}
+
+@keyframes transitionIn {
+    from {
+        opacity:0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.frame_1, .frame_2, .frame_3
+{
+    animation: transitionIn 1s;
+}
+
+nav 
+{
+    margin-top: 0.5rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+
+nav a:nth-child(4)
+{
+        margin-left: 1.3rem;
+}
+
+.active 
+{
+    border-bottom: 2.5px solid #431A4D;
+}
+
+.jumbotron 
+{
+    background-color: #431A4D;
+}
+
+.column
+{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.frame_1 h1, p
+{
+    text-align: justify;
+}
+
+.frame_1 img
+{
+    margin-top: 37.5px;
+}
+
+.frame_1 .btn
+{
+    color: white !important;
+    background-color: #0C0C0C !important; 
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.frame_2
+{
+    margin-top: 3rem;
+}
+
+.frame_2 h2
+{
+    text-align: center;
+    padding-bottom: 2.6rem;
+}
+
+.frame_2 button:nth-child(1)
+{
+    border: 2px solid #431A4D !important;
+}
+
+.frame_2 button:nth-child(2)
+{
+    background-color: red !important;
+    margin-left: 5rem;
+}
+
+.frame_2 .btn 
+{
+    color: white !important;
+    background-color: #0C0C0C !important; 
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.btns 
+{
+    display: flex;
+    justify-content: center;    
+}
+
+.frame_3 button 
+{
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #0C0C0C; 
+    border: 2px solid #431A4D;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.frame_3 h2 
+{
+    text-align: center;
+}
+
+footer
+{
+    height: fit-content;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+footer .row
+{
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+
+footer img:hover
+{
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+    transition: 1.5s;
+}
+
+.social 
+{
+    float: right;
+}
+
+@media screen and (max-width: 500px)
+{
+    nav a 
+    {
+        text-align: center;
+    }
+
+    nav a:nth-child(4)
+    {
+        margin-left: 0rem;
+    }
+
+    .frame_1 h1 
+    {
+        text-align: center;
+    }
+
+    .frame_1 p 
+    {
+        font-size: 15px;
+        margin-bottom: 10rem;
+    }
+    
+    .frame_1 img
+    {
+        margin-top: 27.5px;
+        width: 80%;
+        height: 86%;
+        margin-left: 1.5rem;
+    }
+
+    button:nth-child(1)
+    {
+        margin-left: 1rem;
+    }
+
+    .frame_2 
+    {
+        margin-bottom: 10rem;
+    }
+
+    .frame_2 button 
+    {
+        font-size: 14px;
+    }
+
+    .frame_2 button:nth-child(2)
+    {
+        background-color: red !important;
+        margin-left: 1.3rem;
+    }   
+
+    iframe
+    {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 2.6rem;
+        margin-top: -2.6rem;
+    }
+
+    .frame_3 img 
+    {
+        width: 75%;
+        height: 100%;
+        margin-left: 2rem;
+        margin-top: -1.3rem;
+    } 
+
+    .frame_3 form 
+    {
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+        margin-bottom: 10rem;
+    }
+    
+    footer div:nth-child(1)
+    {
+        display: flex; 
+        justify-content: center;
+    }
+
+    footer div:nth-child(2)
+    {
+        display: flex; 
+        justify-content: center;
+        padding-top: 1.3rem;
+    }
+}
